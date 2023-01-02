@@ -1,30 +1,20 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+  <Header/>
+  <CreateForm/>
+  <Todos/>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script lang='ts' setup>
+import Header from '@/components/Header.vue'
+import CreateForm from '@/components/CreateForm.vue'
+import Todos from '@/components/Todos.vue'
+</script>
 
-nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
-}
+<style lang='sass' scoped>
+@import '/src/assets/styles/reset.css'
+@font-face
+  font-family: Chakra Petch
+  src: url(@/assets/fonts/ChakraPetch-Light.ttf)
+*
+  font-family: Chakra Petch
 </style>
