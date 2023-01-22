@@ -5,12 +5,12 @@
       <div @click='favorited=true' :class='{active: favorited}'>Favorited</div>
     </div>
     <Todo
-    v-for='todo in todos'
-    :key='todo.id'
-    :id='todo.id'
-    :title='todo.title'
-    :date='todo.date'
-    :favorite='todo.favorite'
+      v-for='todo in todos'
+      :key='todo.id'
+      :id='todo.id'
+      :title='todo.title'
+      :date='todo.date'
+      :favorite='todo.favorite'
     />
   </div>
 </template>
